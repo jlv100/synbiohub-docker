@@ -1,0 +1,26 @@
+version: '3.2'
+
+services:
+    virtuoso:
+        image: tenforce/virtuoso:1.3.1-virtuoso7.2.4
+        volumes: 
+            - type: volumne
+              source: virtuoso-db
+              target: /data
+        ports:
+            - "8890:8890"
+    synbiohub:
+        image: synbiohub/synbiohub:standalone
+        depends_on: 
+            - virtuoso
+        command: "cd /opt/synbiohub; npm start"
+        ports:
+            - "7777:7777"
+        volumes:
+            - type: volume
+              source: sbh
+              target: /mnt
+
+volumes:
+    virutoso-db:
+    sbh:

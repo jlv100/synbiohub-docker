@@ -20,7 +20,7 @@ services:
         ports:
             - "8890:8890"
     synbiohub:
-        image: synbiohub/synbiohub:standalone
+        image: synbiohub/synbiohub:snapshot-standalone
         depends_on: 
             - virtuoso
         ports:

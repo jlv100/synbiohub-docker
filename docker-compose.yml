@@ -29,6 +29,7 @@ services:
             - type: volume
               source: sbh
               target: /mnt
+        dns: 8.8.8.8
 
 volumes:
     virutoso-db:

@@ -5,6 +5,7 @@ services:
         image: michael13162/sbolexplorer:snapshot-synbiohub
         ports:
             - "13162:13162"
+            - "127.0.0.1:13162:13162"
         depends_on:
             - elasticsearch
             - synbiohub
@@ -23,6 +24,7 @@ services:
               target: /data
         ports:
             - "8890:8890"
+            - "127.0.0.1:8890:8890"
     synbiohub:
         image: synbiohub/synbiohub:snapshot-standalone
         depends_on: 

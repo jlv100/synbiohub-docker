@@ -16,6 +16,10 @@ services:
             - elasticsearch
             - synbiohub
         dns: 8.8.8.8
+        volumes:
+            - type: volume
+              source: explorer
+              target: /mnt
     elasticsearch:
         image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
         ports:
@@ -48,3 +52,4 @@ volumes:
     virtuoso-db:
     sbh:
     esdata:
+    explorer:

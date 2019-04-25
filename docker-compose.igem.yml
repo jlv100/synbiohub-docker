@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+    igem:
+        image: synbiohub/igem-plugin:snapshot
+        ports:
+            - "3000:3000"
+        volumes:
+            - type: volume
+              source: igem
+              target: /mnt
+        dns: 8.8.8.8
+        restart: always
+
+volumes:
+    igem:

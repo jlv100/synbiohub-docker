@@ -1,0 +1,3 @@
+services:
+    synbiohub:
+        image: synbiohub/synbiohub:snapshot-standalone

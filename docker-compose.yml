@@ -18,7 +18,7 @@ services:
             - "8890:8890"
         restart: always  
     synbiohub:
-        image: synbiohub/synbiohub:1.5.1-standalone
+        image: synbiohub/synbiohub:1.5.2-standalone
         depends_on: 
             - virtuoso
         ports:

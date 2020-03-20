@@ -2,7 +2,7 @@
 ## Updated March 20, 2020
 
 The docker-compose files in this repository represent various configurations for deploying SynBioHub.
-The files can be layered with Docker Compose's [multiple file](https://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-file://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-files) capabilities. 
+The files can be layered with Docker Compose's [multiple file](https://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-file) capabilities. 
 
 The base configuration, described with `docker-compose.yml`, is simply SynBioHub, its graph database Virtuoso, and an autohealer.
 

@@ -1,0 +1,106 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: virtuoso-db
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: sbh
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: igem
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: synbiohub
+spec:
+  selector:
+    matchLabels:
+      app: synbiohub
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: synbiohub
+    spec:
+      containers:
+      - image: tenforce/virtuoso:virtuoso7.2.5
+        name: virtuoso
+        resources:
+          limits:
+            memory: 1Gi
+        volumeMounts:
+        - mountPath: /data
+          name: virtuoso-db
+        ports:
+        - containerPort: 8890
+
+      - image: synbiohub/synbiohub:1.5.5-standalone
+        name: synbiohub
+        command: ["./entry.sh"]
+        resources:
+          limits:
+            memory: 1Gi
+        ports:
+        - containerPort: 7777
+
+      - image: michael13162/sbolexplorer:snapshot-synbiohub
+        name: explorer
+        resources:
+          limits:
+            memory: 1Gi
+        ports:
+        - containerPort: 13162
+
+      - image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+        name: elasticsearch
+        command: ["/usr/local/bin/docker-entrypoint.sh"]
+        resources:
+          limits:
+            memory: 2Gi
+        ports:
+        - containerPort: 6200
+
+      - image: synbiohub/igem-plugin:snapshot
+        name: igem
+        resources:
+          limits:
+            memory: 1Gi
+        volumeMounts:
+        - mountPath: /mnt
+          name: igem
+        ports:
+        - containerPort: 3000
+
+      volumes:
+      - name: virtuoso-db
+        persistentVolumeClaim:
+          claimName: virtuoso-db
+      - name: sbh
+        persistentVolumeClaim:
+          claimName: sbh
+      - name: igem
+        persistentVolumeClaim:
+          claimName: igem

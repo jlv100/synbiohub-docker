@@ -50,7 +50,7 @@ spec:
         name: virtuoso
         resources:
           limits:
-            memory: 1Gi
+            memory: 4Gi
         volumeMounts:
         - mountPath: /data
           name: virtuoso-db
@@ -62,7 +62,7 @@ spec:
         command: ["./entry.sh"]
         resources:
           limits:
-            memory: 1Gi
+            memory: 4Gi
         ports:
         - containerPort: 7777
 
@@ -70,7 +70,7 @@ spec:
         name: explorer
         resources:
           limits:
-            memory: 1Gi
+            memory: 4Gi
         ports:
         - containerPort: 13162
 
@@ -79,7 +79,7 @@ spec:
         command: ["/usr/local/bin/docker-entrypoint.sh"]
         resources:
           limits:
-            memory: 2Gi
+            memory: 8Gi
         ports:
         - containerPort: 6200
 
@@ -87,7 +87,7 @@ spec:
         name: igem
         resources:
           limits:
-            memory: 1Gi
+            memory: 4Gi
         volumeMounts:
         - mountPath: /mnt
           name: igem

@@ -4,7 +4,7 @@ services:
     servelet:
         image: synbiohub/synbiohub/plugin-serve-test:snapshot
         ports:
-            - "8081:5000"
+            - "8086:5000"
         volumes:
             - type: volume
               source: servelet

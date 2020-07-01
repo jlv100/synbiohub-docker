@@ -5,7 +5,7 @@ services:
     seqviz:
         image: synbiohub/plugin-sequence-viewer-test:snapshot
         ports:
-            - "8083:5000"
+            - "8085:5000"
         volumes:
             - type: volume
               source: seqviz

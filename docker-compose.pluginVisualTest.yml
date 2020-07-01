@@ -5,6 +5,8 @@ services:
         image: synbiohub/plugin-visualisation-test:snapshot
         ports:
             - "8081:5000"
+        depends on:
+            -synbiohub
         volumes:
             - type: volume
               source: pluginVisualTest
@@ -14,4 +16,3 @@ services:
 
 volumes:
     pluginVisualTest:
-        external: true

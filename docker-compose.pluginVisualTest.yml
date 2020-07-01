@@ -5,13 +5,14 @@ services:
         image: synbiohub/plugin-visualisation-test:snapshot
         ports:
             - "8081:5000"
-        depends_on:
-            - synbiohub
         volumes:
             - type: volume
               source: pluginVisualTest
               target: /mnt
         restart: always
+        dns: 8.8.8.8
+        networks:
+            - synbiohub-docker_default
 
 volumes:
     pluginVisualTest:

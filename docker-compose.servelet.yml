@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
     servelet:
-        image: synbiohub/synbiohub/plugin-serve-test:snapshot
+        image: synbiohub/plugin-serve-test:snapshot
         ports:
             - "8086:5000"
         volumes:

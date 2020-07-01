@@ -13,8 +13,6 @@ services:
         dns: 8.8.8.8
         depends_on:
             - synbiohub
-        networks:
-            - synbiohub-docker_default
 
 volumes:
     pluginVisualTest:

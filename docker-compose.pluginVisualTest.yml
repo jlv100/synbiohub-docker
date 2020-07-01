@@ -10,7 +10,7 @@ services:
         volumes:
             - type: volume
               source: pluginVisualTest
-              target: /mnt
+              target: /pluginVisualTest
         dns: 8.8.8.8
         restart: always
 

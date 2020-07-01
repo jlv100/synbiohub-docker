@@ -5,7 +5,7 @@ services:
         image: synbiohub/plugin-visualisation-test:snapshot
         ports:
             - "8081:5000"
-        depends on:
+        depends_on:
             -synbiohub
         volumes:
             - type: volume

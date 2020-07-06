@@ -3,7 +3,7 @@ version: '3.2'
 
 services:
     seqviz:
-        image: synbiohub/plugin-sequence-viewer-test:snapshot
+        image: synbiohub/plugin-sequence-viewer-js:snapshot
         ports:
             - "8085:5000"
         volumes:

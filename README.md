@@ -14,7 +14,7 @@ To run the configuration with SBOLExplorer, use `docker-compose -f docker-compos
 
 To add iGEM rendering plugins, add the `docker-compose.igem.yml`.
 
-To run the configuration with iGEM, use `docker-compose -f docker-compose.yml -f docker-compose.igem.yml up`.
+To run the configuration with iGEM, use `docker-compose -f docker-compose.yml -f docker-compose.pluginIgem.yml up`.
 
 The `docker-compose.version.yml` can be added to another configuration, and simply contains the latest version of the SynBioHub docker image. 
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 

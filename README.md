@@ -20,6 +20,7 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Plugin Ports Used
+Note that thee are other ports that are already in use: synbiohug:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.
 ### In alphabetical order
  - docker-compose.pluginComponentUse.yml : 8080
  - docker-compose.pluginIgem.yml : 3000

@@ -1,13 +1,13 @@
 version: '3.2'
 
 services:
-    servelet:
+    pluginServelet:
         image: synbiohub/plugin-serve-test:snapshot
         ports:
             - "8086:5000"
         volumes:
             - type: volume
-              source: servelet
+              source: pluginServelet
               target: /mnt
         restart: always
         dns: 8.8.8.8
@@ -15,4 +15,4 @@ services:
             - synbiohub
 
 volumes:
-    servelet:
+    pluginServelet:

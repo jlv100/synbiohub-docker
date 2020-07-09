@@ -18,3 +18,25 @@ To run the configuration with iGEM, use `docker-compose -f docker-compose.yml -f
 
 The `docker-compose.version.yml` can be added to another configuration, and simply contains the latest version of the SynBioHub docker image. 
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
+
+## Plugin Ports Used
+### In alphabetical order
+ - docker-compose.pluginComponentUse.yml : 8080
+ - docker-compose.pluginIgem.yml : 3000
+ - docker-compose.pluginSeqviz.yml : 8085
+ - docker-compose.pluginServelet.yml : 8086
+ - docker-compose.pluginSnapgeneDownload.yml : 8083
+ - docker-compose.pluginSnapgeneSubmit.yml : 8084
+ - docker-compose.pluginSubmitTest.yml : 8087
+ - docker-compose.pluginVisualTest.yml : 8081
+ - docker-compose.pluginVisualTestJS.yml : 8082
+ ### In port order
+ - docker-compose.pluginIgem.yml : 3000
+ - docker-compose.pluginComponentUse.yml : 8080
+ - docker-compose.pluginVisualTest.yml : 8081
+ - docker-compose.pluginVisualTestJS.yml : 8082
+ - docker-compose.pluginSnapgeneDownload.yml : 8083
+ - docker-compose.pluginSnapgeneSubmit.yml : 8084
+ - docker-compose.pluginSeqviz.yml : 8085
+ - docker-compose.pluginServelet.yml : 8086
+ - docker-compose.pluginSubmitTest.yml : 8087

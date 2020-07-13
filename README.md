@@ -33,7 +33,7 @@ This version does not even contain the Virtuoso image, so it should only be used
  - **VisualTestJS** : A javascript TEST visualisation plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test-js
 
 ## Plugin Ports Used
-Note that thee are other ports that are already in use: synbiohug:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.
+Note that thee are other ports that are already in use: synbiohub:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.
 ### In alphabetical order
  - docker-compose.pluginDownloadSnapgene.yml : 8083
  - docker-compose.pluginSubmitSnapgene.yml : 8084

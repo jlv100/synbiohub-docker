@@ -1,13 +1,13 @@
 version: '3.2'
 
 services:
-    pluginSnapgeneDownload:
+    pluginDownloadSnapgene:
         image: synbiohub/snapgene-download-plugin:snapshot
         ports:
             - "8083:5000"
         volumes:
             - type: volume
-              source: pluginSnapgeneDownload
+              source: pluginDownloadSnapgene
               target: /mnt
         dns: 8.8.8.8
         restart: always
@@ -15,4 +15,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginSnapgeneDownload:
+    pluginDownloadSnapgene:

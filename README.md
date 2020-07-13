@@ -19,14 +19,14 @@ This version does not even contain the Virtuoso image, so it should only be used
 
 ## Description of available plugins
  - **DownloadSnapgene** : For more information see [this](https://github.com/SynBioHub/Plugin-Download-Snapgene)
- - **SubmitSnapgene** : For more information see: https://github.com/SynBioHub/Plugin-Submit-Snapgene
- - **SubmitTest** : A python TEST submit plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Submit-Test
- - **VisualComponentUse** : The visualisation plugin(s) containing a co-use component sankey diagram, and the most used components bar graph endpoints. For more information see: https://github.com/SynBioHub/Plugin-Visual-Component-Use
+ - **SubmitSnapgene** : For more information see: [this](https://github.com/SynBioHub/Plugin-Submit-Snapgene)
+ - **SubmitTest** : A python TEST submit plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: [this](https://github.com/SynBioHub/Plugin-Submit-Test)
+ - **VisualComponentUse** : The visualisation plugin(s) containing a co-use component sankey diagram, and the most used components bar graph endpoints. For more information see: [this](https://github.com/SynBioHub/Plugin-Visual-Component-Use)
  - **VisualIgem** : The visualisation plugin(s) containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page. For more information see: 
- - **VisualSeqviz** : The visualisation plugin which shows the plasmid view and sequence view of components. For more information see: https://github.com/alicelh/sequence-view-plugin
- - **VisualServelet** : A javascript TEST visualisation plugin which allows testing of file serving and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js
- - **VisualTest** : A python TEST visualisation plugin which simply indicates that visualisation plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test
- - **VisualTestJS** : A javascript TEST visualisation plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test-js
+ - **VisualSeqviz** : The visualisation plugin which shows the plasmid view and sequence view of components. For more information see: [this](https://github.com/alicelh/sequence-view-plugin)
+ - **VisualServelet** : A javascript TEST visualisation plugin which allows testing of file serving and provides a framework to play with for plugin developers. For more information see: [this](https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js)
+ - **VisualTest** : A python TEST visualisation plugin which simply indicates that visualisation plugins are working and provides a framework to play with for plugin developers. For more information see: [this](https://github.com/SynBioHub/Plugin-Visual-Test)
+ - **VisualTestJS** : A javascript TEST visualisation plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: [this](https://github.com/SynBioHub/Plugin-Visual-Test-js)
 
 ## Plugin Ports Used
 Note that thee are other ports that are already in use: synbiohub:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.

@@ -1,13 +1,13 @@
 version: '3.2'
 
 services:
-    pluginComponentUse:
+    pluginVisualComponentUse:
         image: synbiohub/component-use-plugin:snapshot
         ports:
             - "8080:5000"
         volumes:
             - type: volume
-              source: pluginComponentUse
+              source: pluginVisualComponentUse
               target: /mnt
         dns: 8.8.8.8
         restart: always
@@ -15,4 +15,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginComponentUse:
+    pluginVisualComponentUse:

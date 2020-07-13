@@ -1,13 +1,13 @@
 version: '3.2'
 
 services:
-    pluginSnapgeneSubmit:
+    pluginSubmitSnapgene:
         image: synbiohub/snapgene-submit-plugin:snapshot
         ports:
             - "8084:5000"
         volumes:
             - type: volume
-              source: pluginSnapgeneSubmit
+              source: pluginSubmitSnapgene
               target: /mnt
         dns: 8.8.8.8
         restart: always
@@ -15,4 +15,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginSnapgeneSubmit:
+    pluginSubmitSnapgene:

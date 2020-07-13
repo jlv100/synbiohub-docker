@@ -33,13 +33,13 @@ This version does not even contain the Virtuoso image, so it should only be used
 ## Plugin Ports Used
 Note that thee are other ports that are already in use: synbiohug:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.
 ### In alphabetical order
+ - docker-compose.pluginDownloadSnapgene.yml : 8083
+ - docker-compose.pluginSubmitSnapgene.yml : 8084
+ - docker-compose.pluginSubmitTest.yml : 8087
  - docker-compose.pluginVisualComponentUse.yml : 8080
  - docker-compose.pluginVisualIgem.yml : 3000
  - docker-compose.pluginVisualSeqviz.yml : 8085
  - docker-compose.pluginVisualServelet.yml : 8086
- - docker-compose.pluginDownloadSnapgene.yml : 8083
- - docker-compose.pluginSubmitSnapgene.yml : 8084
- - docker-compose.pluginSubmitTest.yml : 8087
  - docker-compose.pluginVisualTest.yml : 8081
  - docker-compose.pluginVisualTestJS.yml : 8082
  ### In port order

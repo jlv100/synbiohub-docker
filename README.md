@@ -20,7 +20,7 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Description of available plugins
- - **DownloadSnapgene.yml** : For more information see: https://github.com/SynBioHub/Plugin-Download-Snapgene
+ - **DownloadSnapgene** : For more information see: https://github.com/SynBioHub/Plugin-Download-Snapgene
  - **SubmitSnapgene** : For more information see: https://github.com/SynBioHub/Plugin-Submit-Snapgene
  - **SubmitTest** : A python TEST submit plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Submit-Test
  - **VisualComponentUse** : The visualisation plugin(s) containing a co-use component sankey diagram, and the most used components bar graph endpoints. For more information see: https://github.com/SynBioHub/Plugin-Visual-Component-Use

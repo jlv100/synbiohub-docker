@@ -2,13 +2,13 @@
 version: '3.2'
 
 services:
-    pluginSeqviz:
+    pluginVisualSeqviz:
         image: synbiohub/plugin-sequence-viewer-js:snapshot
         ports:
             - "8085:5000"
         volumes:
             - type: volume
-              source: pluginSeqviz
+              source: pluginVisualSeqviz
               target: /mnt
         dns: 8.8.8.8
         restart: always
@@ -16,4 +16,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginSeqviz:
+    pluginVisualSeqviz:

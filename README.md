@@ -12,9 +12,11 @@ To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `do
 
 To run the configuration with SBOLExplorer, use `docker-compose -f docker-compose.yml -f docker-compose.explorer.yml up`.
 
-To add iGEM rendering plugins, add the `docker-compose.igem.yml`.
+To add iGEM rendering plugins, add the `docker-compose.pluginVisualigem.yml`.
 
-To run the configuration with iGEM, use `docker-compose -f docker-compose.yml -f docker-compose.pluginIgem.yml up`.
+To run the configuration with iGEM, use `docker-compose -f docker-compose.yml -f docker-compose.pluginVisualIgem.yml up`.
+
+To add plugins to the configuration use `docker-compose -f docker-compose.yml -f <plugin 1 file name> -f <plugin 2 file name> -f <plugin 3 file name> up`. Note that all plugins are added before the `up` and each is preceeded by `-f `
 
 The `docker-compose.version.yml` can be added to another configuration, and simply contains the latest version of the SynBioHub docker image. 
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 

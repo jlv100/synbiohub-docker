@@ -20,15 +20,15 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Description of available plugins
- - docker-compose.pluginVisualComponentUse.yml : The visualisation plugin(s) containing a co-use component sankey diagram, and the most used components bar graph endpoints. For more information see: https://github.com/SynBioHub/Plugin-Visual-Component-Use
- - docker-compose.pluginVisualIgem.yml : The visualisation plugin(s) containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page. For more information see: 
- - docker-compose.pluginVisualSeqviz.yml : The visualisation plugin which shows the plasmid view and sequence view of components. For more information see: https://github.com/alicelh/sequence-view-plugin
- - docker-compose.pluginVisualServelet.yml : A javascript TEST visualisation plugin which allows testing of file serving and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js
- - docker-compose.pluginDownloadSnapgene.yml : For more information see: https://github.com/SynBioHub/Plugin-Download-Snapgene
- - docker-compose.pluginSubmitSnapgene.yml : For more information see: https://github.com/SynBioHub/Plugin-Submit-Snapgene
- - docker-compose.pluginSubmitTest.yml : A python TEST submit plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Submit-Test
- - docker-compose.pluginVisualTest.yml : A python TEST visualisation plugin which simply indicates that visualisation plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test
- - docker-compose.pluginVisualTestJS.yml : A javascript TEST visualisation plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test-js
+ - **DownloadSnapgene.yml** : For more information see: https://github.com/SynBioHub/Plugin-Download-Snapgene
+ - **SubmitSnapgene** : For more information see: https://github.com/SynBioHub/Plugin-Submit-Snapgene
+ - **SubmitTest** : A python TEST submit plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Submit-Test
+ - **VisualComponentUse** : The visualisation plugin(s) containing a co-use component sankey diagram, and the most used components bar graph endpoints. For more information see: https://github.com/SynBioHub/Plugin-Visual-Component-Use
+ - **VisualIgem** : The visualisation plugin(s) containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page. For more information see: 
+ - **VisualSeqviz** : The visualisation plugin which shows the plasmid view and sequence view of components. For more information see: https://github.com/alicelh/sequence-view-plugin
+ - **VisualServelet** : A javascript TEST visualisation plugin which allows testing of file serving and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js
+ - **VisualTest** : A python TEST visualisation plugin which simply indicates that visualisation plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test
+ - **VisualTestJS** : A javascript TEST visualisation plugin which simply indicates that submit plugins are working and provides a framework to play with for plugin developers. For more information see: https://github.com/SynBioHub/Plugin-Visual-Test-js
 
 ## Plugin Ports Used
 Note that thee are other ports that are already in use: synbiohug:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.

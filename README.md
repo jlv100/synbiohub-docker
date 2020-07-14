@@ -19,9 +19,7 @@ This version does not even contain the Virtuoso image, so it should only be used
 
 ## Plugins
 <html>
-	<header>
-		<title>Plugin Table</title>
-		<style>
+	<style>
 		table {
 		  border-spacing: 0;
 		  width: 100%;
@@ -37,8 +35,7 @@ This version does not even contain the Virtuoso image, so it should only be used
 		tr:nth-child(even) {
 		  background-color: #f2f2f2
 		}
-		</style>
-	</header>
+	</style>
 	<body>
 		<div style="overflow-x:auto;">
 			<table id="PluginTable">

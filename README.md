@@ -18,7 +18,6 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Plugins
-<html>
 	<head>
 		<title>Plugin Table</title>
 		<style>
@@ -213,7 +212,6 @@ This version does not even contain the Virtuoso image, so it should only be used
 			}
 		</script>
 	</body>
-</html>
 ## Description of available plugins
  - **DownloadSnapgene** : For more information see [this](https://github.com/SynBioHub/Plugin-Download-Snapgene)
  - **SubmitSnapgene** : For more information see: [this](https://github.com/SynBioHub/Plugin-Submit-Snapgene)

@@ -19,122 +19,121 @@ This version does not even contain the Virtuoso image, so it should only be used
 
 ## Plugins
 <body>
-		<div style="overflow-x:auto;">
-			<table id="PluginTable">
-				<tr>
-					<!--When a header is clicked, run the sortTable function, with a parameter,
-					0 for sorting by names, 1 for sorting by country: -->
-					<th onclick="sortTable(0)">Name</th>
-					<th onclick="sortTable(1)">Type</th>
-					<th onclick="sortTable(2)">Port</th>
-					<th onclick="sortTable(3)">Language</th>
-					<th onclick="sortTable(4)">Test</th>
-					<th onclick="sortTable(5)">Description</th>
-					<th onclick="sortTable(6)">Multi-Endpoint</th>
-					<th onclick="sortTable(7)">Repository</th>
-					<th onclick="sortTable(8)">File</th>
-				</tr>
-				<tr>
-					<td>DownloadSnapgene</td>
-					<td>Download</td>
-					<td>8083</td>
-					<td>Python</td>
-					<td>No</td>
-					<td></td>
-					<td></td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Download-Snapgene">Plugin-Download-Snapgene</a></td>
-					<td>docker-compose.pluginDownloadSnapgene.yml</td>
-				</tr>
-				<tr>
-					<td>SubmitSnapgene</td>
-					<td>Submit</td>
-					<td>8084</td>
-					<td>Python</td>
-					<td>No</td>
-					<td></td>
-					<td></td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Submit-Snapgene">Plugin-Submit-Snapgene</a></td>
-					<td>docker-compose.pluginSubmitSnapgene.yml</td>
-				</tr>
-				<tr>
-					<td>SubmitTest</td>
-					<td>Submit</td>
-					<td>8087</td>
-					<td>Python</td>
-					<td>Yes</td>
-					<td>Simply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
-					<td>No</td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Submit-Test">Plugin-Submit-Test</a></td>
-					<td>docker-compose.pluginSubmitTest.yml</td>
-				</tr>
-				<tr>
-					<td>VisualComponentUse</td>
-					<td>Visual</td>
-					<td>8080</td>
-					<td>Python</td>
-					<td>No</td>
-					<td>Containing a co-use component sankey diagram, and the most used components bar graph endpoints</td>
-					<td>Yes</td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Component-Use">Plugin-Visual_component-Use</a></td>
-					<td>docker-compose.pluginVisualComponentUse.yml</td>
-				</tr>
-				<tr>
-					<td>VisualIgem</td>
-					<td>Visual</td>
-					<td>3000</td>
-					<td></td>
-					<td>No</td>
-					<td>Containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page</td>
-					<td>Yes</td>
-					<td><a href=""></a></td>
-					<td>docker-compose.pluginVisualIgem.yml</td>
-				</tr>
-				<tr>
-					<td>VisualSeqviz</td>
-					<td>Visual</td>
-					<td>8085</td>
-					<td>Javascript</td>
-					<td>No</td>
-					<td>Shows the plasmid view and sequence view of components</td>
-					<td>No</td>
-					<td><a href="https://github.com/alicelh/sequence-view-plugin">sequence-view-plugin</a></td>
-					<td>docker-compose.pluginVisualSeqviz.yml</td>
-				</tr>
-				<tr>
-					<td>VisualServelet</td>
-					<td>Visual</td>
-					<td>8086</td>
-					<td>Javascript</td>
-					<td>Yes</td>
-					<td>Allows testing of file serving and provides a framework to play with for plugin developers</td>
-					<td>No</td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js">Plugin-Visual-Serve-Test-js</a></td>
-					<td>docker-compose.pluginVisualServelet.yml</td>
-				</tr>
-				<tr>
-					<td>VisualTest</td>
-					<td>Visual</td>
-					<td>8081</td>
-					<td>Python</td>
-					<td>Yes</td>
-					<td>Smply indicates that visualisation plugins are working and provides a framework to play with for plugin developers</td>
-					<td>No</td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test">Plugin-Visual-Test</a></td>
-					<td>docker-compose.pluginVisualTest.yml</td>
-				</tr>
-				<tr>
-					<td>VisualTestJS</td>
-					<td>Visual</td>
-					<td>8082</td>
-					<td>Javascript</td>
-					<td>Yes</td>
-					<td>Aimply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
-					<td>No</td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test-js">Plugin-Visual-Test-js</a></td>
-					<td>docker-compose.pluginVisualTestJS.yml</td>
-				</tr>
-			</table>
-		</div>
+	<div style="overflow-x:auto;">
+		<table id="PluginTable">
+			<tr>
+				<!--When a header is clicked, run the sortTable function, with a parameter,
+				0 for sorting by names, 1 for sorting by country: -->
+				<th onclick="sortTable(0)">Name</th>
+				<th onclick="sortTable(1)">Type</th>
+				<th onclick="sortTable(2)">Port</th>
+				<th onclick="sortTable(3)">Language</th>
+				<th onclick="sortTable(4)">Test</th>
+				<th onclick="sortTable(5)">Description</th>
+				<th onclick="sortTable(6)">Multi-Endpoint</th>
+				<th onclick="sortTable(7)">Repository</th>
+				<th onclick="sortTable(8)">File</th>
+			</tr>
+			<tr>
+				<td>DownloadSnapgene</td>
+				<td>Download</td>
+				<td>8083</td>
+				<td>Python</td>
+				<td>No</td>
+				<td></td>
+				<td></td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Download-Snapgene">Plugin-Download-Snapgene</a></td>
+				<td>docker-compose.pluginDownloadSnapgene.yml</td>
+			</tr>
+			<tr>
+				<td>SubmitSnapgene</td>
+				<td>Submit</td>
+				<td>8084</td>
+				<td>Python</td>
+				<td>No</td>
+				<td></td>
+				<td></td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Submit-Snapgene">Plugin-Submit-Snapgene</a></td>
+				<td>docker-compose.pluginSubmitSnapgene.yml</td>
+			</tr>
+			<tr>
+				<td>SubmitTest</td>
+				<td>Submit</td>
+				<td>8087</td>
+				<td>Python</td>
+				<td>Yes</td>
+				<td>Simply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
+				<td>No</td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Submit-Test">Plugin-Submit-Test</a></td>
+				<td>docker-compose.pluginSubmitTest.yml</td>
+			</tr>
+			<tr>
+				<td>VisualComponentUse</td>
+				<td>Visual</td>
+				<td>8080</td>
+				<td>Python</td>
+				<td>No</td>
+				<td>Containing a co-use component sankey diagram, and the most used components bar graph endpoints</td>
+				<td>Yes</td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Visual-Component-Use">Plugin-Visual_component-Use</a></td>
+				<td>docker-compose.pluginVisualComponentUse.yml</td>
+			</tr>
+			<tr>
+				<td>VisualIgem</td>
+				<td>Visual</td>
+				<td>3000</td>
+				<td></td>
+				<td>No</td>
+				<td>Containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page</td>
+				<td>Yes</td>
+				<td><a href=""></a></td>
+				<td>docker-compose.pluginVisualIgem.yml</td>
+			</tr>
+			<tr>
+				<td>VisualSeqviz</td>
+				<td>Visual</td>
+				<td>8085</td>
+				<td>Javascript</td>
+				<td>No</td>
+				<td>Shows the plasmid view and sequence view of components</td>
+				<td>No</td>
+				<td><a href="https://github.com/alicelh/sequence-view-plugin">sequence-view-plugin</a></td>
+				<td>docker-compose.pluginVisualSeqviz.yml</td>
+			</tr>
+			<tr>
+				<td>VisualServelet</td>
+				<td>Visual</td>
+				<td>8086</td>
+				<td>Javascript</td>
+				<td>Yes</td>
+				<td>Allows testing of file serving and provides a framework to play with for plugin developers</td>
+				<td>No</td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js">Plugin-Visual-Serve-Test-js</a></td>
+				<td>docker-compose.pluginVisualServelet.yml</td>
+			</tr>
+			<tr>
+				<td>VisualTest</td>
+				<td>Visual</td>
+				<td>8081</td>
+				<td>Python</td>
+				<td>Yes</td>
+				<td>Smply indicates that visualisation plugins are working and provides a framework to play with for plugin developers</td>
+				<td>No</td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test">Plugin-Visual-Test</a></td>
+				<td>docker-compose.pluginVisualTest.yml</td>
+			</tr>
+			<tr>
+				<td>VisualTestJS</td>
+				<td>Visual</td>
+				<td>8082</td>
+				<td>Javascript</td>
+				<td>Yes</td>
+				<td>Aimply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
+				<td>No</td>
+				<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test-js">Plugin-Visual-Test-js</a></td>
+				<td>docker-compose.pluginVisualTestJS.yml</td>
+			</tr>
+		</table>
 		<script>
 			function sortTable(n) {
 			  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -191,6 +190,7 @@ This version does not even contain the Virtuoso image, so it should only be used
 			  }
 			}
 		</script>
+	</div>
 	</body>
 
 ## Description of available plugins

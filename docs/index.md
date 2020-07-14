@@ -1,7 +1,9 @@
 ## Plugins
 This is a sortable table with plugin information. Click on the header to sort by that column.
 <html>
-	<style>
+	<head>
+		<title>Plugin Table</title>
+		<style>
 		table {
 		  border-spacing: 0;
 		  width: 100%;
@@ -12,16 +14,16 @@ This is a sortable table with plugin information. Click on the header to sort by
 		}
 		th, td {
 		  text-align: left;
-		  padding: 14px;
+		  padding: 16px;
 		}
 		tr:nth-child(even) {
 		  background-color: #f2f2f2
 		}
-	</style>
+		</style>
+	</head>
 	<body>
-		<div style="overflow-x:auto;">
-			<table id="PluginTable" class="display">
-				<tr>
+			<table id="PluginTable">
+				<thead>
 					<!--When a header is clicked, run the sortTable function, with a parameter,
 					0 for sorting by names, 1 for sorting by country: -->
 					<th>Name</th>
@@ -33,7 +35,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<th>Multi-Endpoint</th>
 					<th>Repository</th>
 					<th>File</th>
-				</tr>
+				</thead>
 				<tr>
 					<td>DownloadSnapgene</td>
 					<td>Download</td>
@@ -134,62 +136,17 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>docker-compose.pluginVisualTestJS.yml</td>
 				</tr>
 			</table>
-		</div>
-		<script>
-			function sortTable(n) {
-			  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-			  table = document.getElementById("PluginTable");
-			  switching = true;
-			  // Set the sorting direction to ascending:
-			  dir = "asc";
-			  /* Make a loop that will continue until
-			  no switching has been done: */
-			  while (switching) {
-				// Start by saying: no switching is done:
-				switching = false;
-				rows = table.rows;
-				/* Loop through all table rows (except the
-				first, which contains table headers): */
-				for (i = 1; i < (rows.length - 1); i++) {
-				  // Start by saying there should be no switching:
-				  shouldSwitch = false;
-				  /* Get the two elements you want to compare,
-				  one from current row and one from the next: */
-				  x = rows[i].getElementsByTagName("TD")[n];
-				  y = rows[i + 1].getElementsByTagName("TD")[n];
-				  /* Check if the two rows should switch place,
-				  based on the direction, asc or desc: */
-				  if (dir == "asc") {
-					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-					  // If so, mark as a switch and break the loop:
-					  shouldSwitch = true;
-					  break;
-					}
-				  } else if (dir == "desc") {
-					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-					  // If so, mark as a switch and break the loop:
-					  shouldSwitch = true;
-					  break;
-					}
-				  }
-				}
-				if (shouldSwitch) {
-				  /* If a switch has been marked, make the switch
-				  and mark that a switch has been done: */
-				  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-				  switching = true;
-				  // Each time a switch is done, increase this count by 1:
-				  switchcount ++;
-				} else {
-				  /* If no switching has been done AND the direction is "asc",
-				  set the direction to "desc" and run the while loop again. */
-				  if (switchcount == 0 && dir == "asc") {
-					dir = "desc";
-					switching = true;
-				  }
-				}
-			  }
-			}
-		</script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+			  
+			<script>
+				$(document).ready(function () {
+					$('#PluginTable').DataTable({
+						    paging:false,
+							scrollX:false,
+							searching:true
+					});
+				});
+			</script>
 	</body>
 </html>

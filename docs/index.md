@@ -1,5 +1,5 @@
 ## Plugins
-This is a sortable table with plugin information. Click on the headers to sort by that column.
+This is a sortable table with plugin information. Click on the header to sort by that column.
 <html>
 	<style>
 		table {

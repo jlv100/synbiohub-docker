@@ -166,7 +166,8 @@ This is a sortable table with plugin information. Click on the header to sort by
 				var table = $('#example').DataTable({
 					paging:false,
 					orderCellsTop:false,
-					fixedHeader: true
+					fixedHeader: true,
+					scrollX: false
 				});
 				$('#example thead tr:eq(0) th').each( function (i) {
 					var select = $('<select><option value=""></option></select>')

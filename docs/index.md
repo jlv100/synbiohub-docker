@@ -32,7 +32,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 		<link rel="stylesheet" type="text/css" href="https://www.jqueryscript.net/demo/DataTables-Jquery-Table-Plugin/media/css/jquery.dataTables.css">
 	</head>
 	<body>
-		<table id="example" class="display" cellspacing="0" width="100%">
+		<table id="example" class="display" cellspacing="0" width="50%">
 			<thead>
 				<tr>
 					<th style="visibility: hidden;">Name</th>

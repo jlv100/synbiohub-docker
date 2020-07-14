@@ -19,29 +19,6 @@ This version does not even contain the Virtuoso image, so it should only be used
 
 ## Plugins
 <html>
-	<head>
-		<title>Plugin Table</title>
-		<style>
-		table {
-		  border-spacing: 0;
-		  width: 100%;
-		  border: 1px solid #ddd;
-		}
-
-		th {
-		  cursor: pointer;
-		}
-
-		th, td {
-		  text-align: left;
-		  padding: 16px;
-		}
-
-		tr:nth-child(even) {
-		  background-color: #f2f2f2
-		}
-		</style>
-	</head>
 	<body>
 		<div style="overflow-x:auto;">
 			<table id="PluginTable">

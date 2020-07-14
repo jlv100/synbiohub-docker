@@ -18,7 +18,6 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Plugins
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Plugin Table</title>

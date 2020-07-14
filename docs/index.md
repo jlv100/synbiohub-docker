@@ -20,19 +20,19 @@ This is a sortable table with plugin information. Click on the header to sort by
 	</style>
 	<body>
 		<div style="overflow-x:auto;">
-			<table id="PluginTable">
+			<table id="PluginTable" class="display">
 				<tr>
 					<!--When a header is clicked, run the sortTable function, with a parameter,
 					0 for sorting by names, 1 for sorting by country: -->
-					<th onclick="sortTable(0)">Name</th>
-					<th onclick="sortTable(1)">Type</th>
-					<th onclick="sortTable(2)">Port</th>
-					<th onclick="sortTable(3)">Language</th>
-					<th onclick="sortTable(4)">Test</th>
-					<th onclick="sortTable(5)">Description</th>
-					<th onclick="sortTable(6)">Multi-Endpoint</th>
-					<th onclick="sortTable(7)">Repository</th>
-					<th onclick="sortTable(8)">File</th>
+					<th>Name</th>
+					<th>Type</th>
+					<th>Port</th>
+					<th>Language</th>
+					<th>Test</th>
+					<th>Description</th>
+					<th>Multi-Endpoint</th>
+					<th>Repository</th>
+					<th>File</th>
 				</tr>
 				<tr>
 					<td>DownloadSnapgene</td>

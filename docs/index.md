@@ -64,7 +64,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>8087</td>
 					<td>Python</td>
 					<td>Yes</td>
-					<td>Simply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
+					<td>Shows that submit plugins are working and provides a framework to play with for plugin developers</td>
 					<td>No</td>
 					<td><a href="https://github.com/SynBioHub/Plugin-Submit-Test">Plugin-Submit-Test</a></td>
 					<td>docker-compose.pluginSubmitTest.yml</td>
@@ -119,7 +119,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>8081</td>
 					<td>Python</td>
 					<td>Yes</td>
-					<td>Smply indicates that visualisation plugins are working and provides a framework to play with for plugin developers</td>
+					<td>Shows that visualisation plugins are working and provides a framework to play with for plugin developers</td>
 					<td>No</td>
 					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test">Plugin-Visual-Test</a></td>
 					<td>docker-compose.pluginVisualTest.yml</td>
@@ -130,7 +130,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>8082</td>
 					<td>Javascript</td>
 					<td>Yes</td>
-					<td>Aimply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
+					<td>Simply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
 					<td>No</td>
 					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test-js">Plugin-Visual-Test-js</a></td>
 					<td>docker-compose.pluginVisualTestJS.yml</td>

@@ -12,7 +12,7 @@ This is a sortable table with plugin information. Click on the headers to sort b
 		}
 		th, td {
 		  text-align: left;
-		  padding: 16px;
+		  padding: 14px;
 		}
 		tr:nth-child(even) {
 		  background-color: #f2f2f2

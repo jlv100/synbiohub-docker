@@ -23,7 +23,7 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Plugins
-For full plugin information please see this [table](https://synbiohub.github.io/synbiohub-docker/){:target="_blank"} which contains a sortable table with plugin overview.
+For full plugin information please see this <a href="https://synbiohub.github.io/synbiohub-docker/" target="_blank">table</a> which contains a sortable table with plugin overview.
 
 ### Plugin Ports Used
 Note that thee are other ports that are already in use: synbiohub:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.

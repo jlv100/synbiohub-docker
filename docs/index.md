@@ -29,29 +29,23 @@ This is a sortable table with plugin information. Click on the header to sort by
 <html>
 	<head>
 		<title>Plugin Table</title>
-		<style>
-		table {
-		  border-spacing: 0;
-		  width: 100%;
-		  border: 1px solid #ddd;
-		}
-		th {
-		  cursor: pointer;
-		}
-		th, td {
-		  text-align: left;
-		  padding: 16px;
-		}
-		tr:nth-child(even) {
-		  background-color: #f2f2f2
-		}
-		</style>
+		<link rel="stylesheet" type="text/css" href="https://www.jqueryscript.net/demo/DataTables-Jquery-Table-Plugin/media/css/jquery.dataTables.css">
 	</head>
 	<body>
-			<table id="PluginTable">
-				<thead>
-					<!--When a header is clicked, run the sortTable function, with a parameter,
-					0 for sorting by names, 1 for sorting by country: -->
+		<table id="example" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th style="visibility: hidden;">Name</th>
+					<th>Type</th>
+					<th style="visibility: hidden;">Port</th>
+					<th>Language</th>
+					<th>Test</th>
+					<th style="visibility: hidden;">Description</th>
+					<th>Multi-Endpoint</th>
+					<th style="visibility: hidden;">Repository</th>
+					<th style="visibility: hidden;">File</th>
+				</tr>
+				<tr>
 					<th>Name</th>
 					<th>Type</th>
 					<th>Port</th>
@@ -61,7 +55,9 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<th>Multi-Endpoint</th>
 					<th>Repository</th>
 					<th>File</th>
-				</thead>
+				</tr>
+			</thead>
+			<tbody>
 				<tr>
 					<td>DownloadSnapgene</td>
 					<td>Download</td>
@@ -90,7 +86,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>8087</td>
 					<td>Python</td>
 					<td>Yes</td>
-					<td>Shows that submit plugins are working and provides a framework to play with for plugin developers</td>
+					<td>Simply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
 					<td>No</td>
 					<td><a href="https://github.com/SynBioHub/Plugin-Submit-Test">Plugin-Submit-Test</a></td>
 					<td>docker-compose.pluginSubmitTest.yml</td>
@@ -145,7 +141,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>8081</td>
 					<td>Python</td>
 					<td>Yes</td>
-					<td>Shows that visualisation plugins are working and provides a framework to play with for plugin developers</td>
+					<td>Smply indicates that visualisation plugins are working and provides a framework to play with for plugin developers</td>
 					<td>No</td>
 					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test">Plugin-Visual-Test</a></td>
 					<td>docker-compose.pluginVisualTest.yml</td>
@@ -156,22 +152,36 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>8082</td>
 					<td>Javascript</td>
 					<td>Yes</td>
-					<td>Simply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
+					<td>Aimply indicates that submit plugins are working and provides a framework to play with for plugin developers</td>
 					<td>No</td>
 					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Test-js">Plugin-Visual-Test-js</a></td>
 					<td>docker-compose.pluginVisualTestJS.yml</td>
 				</tr>
-			</table>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-			<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> 
-			<script>
-				$(document).ready(function () {
-					$('#PluginTable').DataTable({
-						    paging:false,
-							scrollX:false,
-							searching:true
-					});
+			</tbody>
+		</table>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				var table = $('#example').DataTable({
+					paging:false,
+					orderCellsTop:false,
+					fixedHeader: true
 				});
-			</script>
+				$('#example thead tr:eq(0) th').each( function (i) {
+					var select = $('<select><option value=""></option></select>')
+						.appendTo( $(this).empty() )
+						.on( 'change', function () {
+							table.column( i )
+								.search( $(this).val() )
+								.draw();
+						} );
+			 
+					table.column( i ).data().unique().sort().each( function ( d, j ) {
+						select.append( '<option value="'+d+'">'+d+'</option>' )
+					} );
+				} );
+			} );
+		</script>
 	</body>
 </html>

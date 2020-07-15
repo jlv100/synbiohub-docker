@@ -3,7 +3,7 @@ version: '3.2'
 
 services:
     pluginVisualSeqviz:
-        image: synbiohub/plugin-visual-sequviz:snapshot
+        image: synbiohub/plugin-visual-seqviz:snapshot
         ports:
             - "8085:5000"
         volumes:

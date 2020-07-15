@@ -99,18 +99,18 @@ This is a sortable table with plugin information. Click on the header to sort by
 					<td>No</td>
 					<td>Containing a co-use component sankey diagram, and the most used components bar graph endpoints</td>
 					<td>Yes</td>
-					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Component-Use">Plugin-Visual_component-Use</a></td>
+					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Component-Use">Plugin-Visual-Component-Use</a></td>
 					<td>docker-compose.pluginVisualComponentUse.yml</td>
 				</tr>
 				<tr>
 					<td>VisualIgem</td>
 					<td>Visual</td>
 					<td>3000</td>
-					<td></td>
+					<td>TypeScript</td>
 					<td>No</td>
 					<td>Containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page</td>
 					<td>Yes</td>
-					<td><a href=""></a></td>
+					<td><a href="https://github.com/SynBioHub/Plugin-Visual-Igem">Plugin-Visual-Igem</a></td>
 					<td>docker-compose.pluginVisualIgem.yml</td>
 				</tr>
 				<tr>

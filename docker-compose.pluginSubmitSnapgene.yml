@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
     pluginSubmitSnapgene:
-        image: synbiohub/snapgene-submit-plugin:snapshot
+        image: synbiohub/plugin-submit-snapgene:snapshot
         ports:
             - "8084:5000"
         volumes:

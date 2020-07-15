@@ -36,5 +36,6 @@ Note that thee are other ports that are already in use: synbiohub:7777, virtuoso
  - docker-compose.pluginDownloadSnapgene.yml : 8083
  - docker-compose.pluginSubmitSnapgene.yml : 8084
  - docker-compose.pluginVisualSeqviz.yml : 8085
- - docker-compose.pluginVisualServelet.yml : 8086
+ - docker-compose.pluginVisualServejs.yml : 8086
  - docker-compose.pluginSubmitTest.yml : 8087
+ - docker-compose.pluginVisualServe.yml : 8088

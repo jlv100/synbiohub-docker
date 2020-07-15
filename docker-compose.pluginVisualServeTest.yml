@@ -1,0 +1,18 @@
+version: '3.2'
+
+services:
+    pluginVisualServeTest:
+        image: synbiohub/plugin-visual-serve-test:snapshot
+        ports:
+            - "8083:5000"
+        volumes:
+            - type: volume
+              source: pluginVisualServeTest
+              target: /mnt
+        dns: 8.8.8.8
+        restart: always
+        depends_on:
+            - synbiohub
+
+volumes:
+    pluginVisualServeTest:

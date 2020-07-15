@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
     pluginDownloadSnapgene:
-        image: synbiohub/snapgene-download-plugin:snapshot
+        image: synbiohub/plugin-download-snapgene:snapshot
         ports:
             - "8083:5000"
         volumes:

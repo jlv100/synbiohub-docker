@@ -1,13 +1,13 @@
 version: '3.2'
 
 services:
-    pluginVisualTestJS:
+    pluginVisualTestJs:
         image: synbiohub/plugin-visualisation-test-js:snapshot
         ports:
             - "8082:5000"
         volumes:
             - type: volume
-              source: pluginVisualTestJS
+              source: pluginVisualTestJs
               target: /mnt
         dns: 8.8.8.8
         restart: always
@@ -15,4 +15,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginVisualTestJS:
+    pluginVisualTestJs:

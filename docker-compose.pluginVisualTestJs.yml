@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
     pluginVisualTestJs:
-        image: synbiohub/plugin-visualisation-test-js:snapshot
+        image: synbiohub/plugin-visual-test-js:snapshot
         ports:
             - "8082:5000"
         volumes:

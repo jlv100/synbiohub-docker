@@ -1,13 +1,13 @@
 version: '3.2'
 
 services:
-    pluginVisualServejs:
-        image: synbiohub/plugin-serve-test:snapshot
+    pluginVisualServeJs:
+        image: synbiohub/plugin-visual-serve-test-js:snapshot
         ports:
             - "8086:5000"
         volumes:
             - type: volume
-              source: pluginVisualServejs
+              source: pluginVisualServeJs
               target: /mnt
         restart: always
         dns: 8.8.8.8
@@ -15,4 +15,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginVisualServejs:
+    pluginVisualServeJs:

@@ -1,0 +1,18 @@
+version: '3.2'
+
+services:
+    pluginDownloadTestEval:
+        image: synbiohub/plugin-download-test-eval:snapshot
+        ports:
+            - "8092:5000"
+        volumes:
+            - type: volume
+              source: pluginDownloadTestEval
+              target: /mnt
+        restart: always
+        dns: 8.8.8.8
+        depends_on:
+            - synbiohub
+
+volumes:
+    pluginDownloadTestEval:

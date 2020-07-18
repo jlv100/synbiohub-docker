@@ -41,3 +41,4 @@ Note that thee are other ports that are already in use: synbiohub:7777, virtuoso
  - docker-compose.pluginVisualServe.yml : 8088
  - docker-compose.pluginDownloadTest.yml : 8089
  - docker-compose.pluginDownloadTestJs.yml : 8090
+ - docker-compose.pluginSubmitTestJs.yml : 8091

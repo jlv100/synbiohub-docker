@@ -43,3 +43,4 @@ Note that thee are other ports that are already in use: synbiohub:7777, virtuoso
  - docker-compose.pluginDownloadTestJs.yml : 8090
  - docker-compose.pluginSubmitTestJs.yml : 8091
  - docker-compose.pluginDownloadTestEval.yml: 8092
+ - docker-compose.pluginSubmitExcel.yml: 8093

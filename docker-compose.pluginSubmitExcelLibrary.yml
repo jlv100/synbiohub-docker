@@ -2,13 +2,13 @@
 version: '3.2'
 
 services:
-    pluginSubmitExcel:
-        image: synbiohub/plugin-submit-excel:snapshot
+    pluginSubmitExcelLibrary:
+        image: synbiohub/plugin-submit-excel-library:snapshot
         ports:
             - "8093:5000"
         volumes:
             - type: volume
-              source: pluginSubmitExcel
+              source: pluginSubmitExcelLibrary
               target: /mnt
         dns: 8.8.8.8
         restart: always
@@ -16,4 +16,4 @@ services:
             - synbiohub
 
 volumes:
-    pluginSubmitExcel:
+    pluginSubmitExcelLibrary:

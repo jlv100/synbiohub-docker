@@ -30,7 +30,6 @@ For full plugin information please see this <a href="https://synbiohub.github.io
 ### Plugin Ports Used
 Note that thee are other ports that are already in use: synbiohub:7777, virtuoso:8890, elasitcsearch:9200, and sbolexplorer:13162.
  - docker-compose.pluginVisualIgem.yml : 3000
- - docker-compose.pluginVisualComponentUse.yml : 8080
  - docker-compose.pluginVisualTest.yml : 8081
  - docker-compose.pluginVisualTestJs.yml : 8082
  - docker-compose.pluginDownloadSnapgene.yml : 8083
@@ -45,3 +44,4 @@ Note that thee are other ports that are already in use: synbiohub:7777, virtuoso
  - docker-compose.pluginDownloadTestEval.yml: 8092
  - docker-compose.pluginSubmitExcelLibrary.yml: 8093
  - docker-compose.pluginSubmitExcelComposition.yml: 8094
+ - docker-compose.pluginVisualComponentUse.yml : 8095

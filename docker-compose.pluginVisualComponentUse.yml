@@ -4,6 +4,6 @@ services:
     pluginVisualComponentUse:
         image: synbiohub/plugin-visual-component-use:snapshot
         ports:
-            - "8080:5000"
+            - "8095:5000"
         dns: 8.8.8.8
         restart: always
